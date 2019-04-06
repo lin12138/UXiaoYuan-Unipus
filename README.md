@@ -7,7 +7,6 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
 * 去除环境检测的灵感来源于GreasyFork上面的[U校园环境检测屏蔽](https://greasyfork.org/zh-CN/scripts/380349-u校园环境检测屏蔽)  
   但是我试了没效果，不知道是不是我的打开方式不对……  
   于是写了个简单粗暴的方法，不是改style样式，而是直接删除  
-* 注意！脚本使用了Tampermonkey的GM_setValue、 GM_getValue、GM_deleteValue；而Greasemonkey中是使用GM.setValue、GM.getValue、GM.deleteValue，但我没测试过，所以没有增加GM.setValue、GM.getValue、GM.deleteValue。所以Greasemonkey下使用可能会有问题
   
 # 食用方法
 * 访问  
@@ -23,6 +22,7 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
   Firefox请安装[Tampermonkey](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)或[Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)或[Violentmonkey](https://addons.mozilla.org/zh-CN/firefox/addon/violentmonkey/)  
   其他浏览器请看[https://greasyfork.org/zh-CN](https://greasyfork.org/zh-CN)  
 * 理论上无论是Tampermonkey还是Violentmonkey抑或是Greasemonkey，脚本都是互通的，都可以用，只是理论上！请自行测试  
+* 注意！脚本使用了Tampermonkey的GM_setValue、 GM_getValue、GM_deleteValue；而Greasemonkey中是使用GM.setValue、GM.getValue、GM.deleteValue，但我没测试过，所以没有增加GM.setValue、GM.getValue、GM.deleteValue。所以Greasemonkey下使用可能会有问题
 
 # 日志
 CHANGELOG.md [GitHub](https://github.com/Brush-JIM/UXiaoYuan-Unipus/blob/master/CHANGELOG.md) or [Bitbucket](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/CHANGELOG.md?fileviewer=file-view-default)  
