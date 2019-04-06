@@ -1,5 +1,9 @@
 # 日志  
 
+## 19.4.6
+* 改善自动登录代码，增加取消自动登录功能，增加删除登录信息，增加删除环境检测菜单栏  
+* 注意！脚本使用了Tampermonkey的GM_setValue、 GM_getValue、GM_deleteValue；而Greasemonkey中是使用GM.setValue、GM.getValue、GM.deleteValue，但我没测试过，所以没有增加GM.setValue、GM.getValue、GM.deleteValue。所以Greasemonkey下使用可能会有问题
+
 ## 19.4.5
 * 重新上传项目  
 
