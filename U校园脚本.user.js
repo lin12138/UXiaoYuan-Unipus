@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         U校园_自动登录、去除环境检测
+// @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
 // @version      0.2
-// @description  自动登录、去除U校园环境检测
+// @description  自动登录、去除U校园环境检测 项目地址：GitHub：https://github.com/Brush-JIM/UXiaoYuan-Unipus 或者Bitbucket：https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/
 // @author       Brush-JIM
 // @match        https://u.unipus.cn/user/student?*
 // @match        https://sso.unipus.cn/sso/login*
@@ -45,11 +45,14 @@
                         alert('账号或密码错误！');
                         GM_setValue('username', null);
                         GM_setValue('password', null);
-                        clearInterval(intervalKey)
+                        clearInterval(intervalKey);
                     }
-                    if (--count === 0) clearInterval(intervalKey)
-                }, 1 * 1e3)
-                }
+                    if (--count === 0)
+                    {
+                        clearInterval(intervalKey);
+                    };
+                }, 1 * 1e3);
+            }
             else
             {
                 document.querySelector("input[name='username']").value = username;
@@ -62,11 +65,14 @@
                         alert('账号或密码错误！');
                         GM_setValue('username', null);
                         GM_setValue('password', null);
-                        clearInterval(intervalKey)
+                        clearInterval(intervalKey);
                     }
-                    if (--count === 0) clearInterval(intervalKey)
-                }, 1 * 1e3)
-                }
+                    if (--count === 0)
+                    {
+                        clearInterval(intervalKey);
+                    };
+                }, 1 * 1e3);
+            }
         }
         catch (error)
         {
@@ -90,11 +96,14 @@
                         alert('账号或密码错误！');
                         GM_setValue('username', null);
                         GM_setValue('password', null);
-                        clearInterval(intervalKey)
+                        clearInterval(intervalKey);
                     }
-                    if (--count === 0) clearInterval(intervalKey)
-                }, 1 * 1e3)
-                }
+                    if (--count === 0)
+                    {
+                        clearInterval(intervalKey);
+                    };
+                }, 1 * 1e3);
+            }
         }
     }
     else if (window.location.href.search("https://u.unipus.cn/user/student?") != -1)
