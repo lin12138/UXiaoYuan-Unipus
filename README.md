@@ -1,7 +1,7 @@
 # 自动登录、去除环境检测  
   
 项目地址  
-GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus](https://github.com/Brush-JIM/UXiaoYuan-Unipus)
+GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus](https://github.com/Brush-JIM/UXiaoYuan-Unipus)  
 Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/)  
 
 * 去除环境检测的灵感来源于GreasyFork上面的[U校园环境检测屏蔽](https://greasyfork.org/zh-CN/scripts/380349-u校园环境检测屏蔽)  
@@ -9,7 +9,7 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
   于是写了个简单粗暴的方法，不是改style样式，而是直接删除  
 # 食用方法
 * 访问  
-    GitHub[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)
+    GitHub[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
     or  
     Bitbucket[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js)  
   安装脚本“U校园脚本.user.js”到Tampermonkey/Violentmonkey/Greasemonkey中  
