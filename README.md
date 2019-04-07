@@ -12,9 +12,9 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
 * 经过测试，脚本不适用Greasemonkey；Violentmonkey未测试；我看了Greasemonkey的文档还是不知道怎么使用GM.* 函数，因为我使用文档的例子一样失败，有大神知道怎么用GM.setValue、GM.getValue、GM.deleteValue吗？  
 * 安装Tampermonkey（推荐，脚本是在Tampermonkey下编写，使用正常）或Greasemonkey或Violentmonkey，安装方法在后面的“注意”标题  
 * 访问  
-    GitHub[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
+    GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
     or  
-    Bitbucket[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js)  
+    Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js)  
   安装脚本“U校园脚本.user.js”到Tampermonkey/Violentmonkey/Greasemonkey中  
   就完成了
 # 注意
