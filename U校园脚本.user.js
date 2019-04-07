@@ -170,7 +170,7 @@
                 a = document.createElement("div");
                 a.setAttribute("class", "content_left_menu_item");
                 a.setAttribute("id", "version");
-                a.innerHTML='<a href="https://u.unipus.cn/user/student?service=true"><span>删除自动登录的信息</span></a>';
+                a.innerHTML='<a href="https://u.unipus.cn/user/student?service=true"><span>重置登录信息</span></a>';
                 document.querySelector("div[class='content_left']").appendChild(a);
             }
         }

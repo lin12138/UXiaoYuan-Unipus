@@ -1,4 +1,4 @@
-# 自动登录、去除环境检测  
+# U校园-自动登录、去除环境检测  
   
 项目地址  
 GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus](https://github.com/Brush-JIM/UXiaoYuan-Unipus)  
@@ -9,7 +9,7 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
   于是写了个简单粗暴的方法，不是改style样式，而是直接删除  
   
 # 食用方法
-* 安装Tampermonkey（推荐，脚本是在Tampermonkey下编写，使用正常）或Greasemonkey或Violentmonkey，安装方法在后面的“注意”标题
+* 安装Tampermonkey（推荐，脚本是在Tampermonkey下编写，使用正常）或Greasemonkey或Violentmonkey，安装方法在后面的“注意”标题  
 * 访问  
     GitHub[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
     or  
