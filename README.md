@@ -9,7 +9,7 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
   于是写了个简单粗暴的方法，不是改style样式，而是直接删除  
   
 # 食用方法
-* 经过测试，脚本不适用Greasemonkey；Violentmonkey未测试；我看了Greasemonkey的文档还是不知道怎么使用GM.* 函数，因为我使用文档的例子一样失败，有大神知道怎么用GM.setValue、GM.getValue、GM.deleteValue吗？  
+* 经过测试，脚本不适用Greasemonkey；我看了Greasemonkey的文档还是不知道怎么使用GM.* 函数，因为我使用文档的例子一样失败，有大神知道怎么用GM.setValue、GM.getValue、GM.deleteValue吗？  
 * 安装Tampermonkey（推荐，脚本是在Tampermonkey下编写，使用正常）或Greasemonkey或Violentmonkey，安装方法在后面的“注意”标题  
 * 访问  
     GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
