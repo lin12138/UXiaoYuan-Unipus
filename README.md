@@ -3,6 +3,7 @@
 项目地址  
 GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus](https://github.com/Brush-JIM/UXiaoYuan-Unipus)  
 Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/)  
+GreasyFork:[https://greasyfork.org/zh-CN/scripts/381805-u校园脚本](https://greasyfork.org/zh-CN/scripts/381805-u校园脚本)  
 
 * 去除环境检测的灵感来源于GreasyFork上面的[U校园环境检测屏蔽](https://greasyfork.org/zh-CN/scripts/380349-u校园环境检测屏蔽)  
   但是我试了没效果，不知道是不是我的打开方式不对……  
@@ -15,6 +16,8 @@ Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/](https://bitbucket.
     GitHub:[https://github.com/Brush-JIM/UXiaoYuan-Unipus/raw/master/U校园脚本.user.js](https://raw.githubusercontent.com/Brush-JIM/UXiaoYuan-Unipus/master/U校园脚本.user.js)  
     or  
     Bitbucket:[https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/U校园脚本.user.js)  
+    or  
+    GreasyFork:[https://greasyfork.org/zh-CN/scripts/381805-u校园脚本](https://greasyfork.org/zh-CN/scripts/381805-u校园脚本)  
   安装脚本“U校园脚本.user.js”到Tampermonkey/Violentmonkey/Greasemonkey中  
   就完成了
 # 注意
