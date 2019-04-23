@@ -1,5 +1,11 @@
 # 日志  
 
+## 19.4.23 V1.0
+* 支持Greaseminkey
+* 增加关闭“长时间未操作”窗口
+* 增加关闭其他窗口
+* 重构脚本
+
 ## 19.4.6
 * 改善自动登录代码，增加取消自动登录功能，增加删除登录信息，增加删除环境检测菜单栏  
 * 注意！脚本使用了Tampermonkey的GM_setValue、 GM_getValue、GM_deleteValue；而Greasemonkey中是使用GM.setValue、GM.getValue、GM.deleteValue，但我没测试过，所以没有增加GM.setValue、GM.getValue、GM.deleteValue。所以Greasemonkey下使用可能会有问题
