@@ -2,7 +2,7 @@
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
 // @version      1.0
-// @description  去除环境检测、长时间无操作、未开麦克风等窗口 项目地址：GitHub：https://github.com/Brush-JIM/UXiaoYuan-Unipus 或者Bitbucket：https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/
+// @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
 // @match        https://u.unipus.cn/user/student*
