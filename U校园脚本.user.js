@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
-// @version      1.2
+// @version      1.3
 // @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
@@ -85,6 +85,8 @@
     }
     else if (window.location.href.search("https://u.unipus.cn/user/student") != -1)
     {
+        //写入session，用来跳过环境检测
+        unsafeWindow.sessionStorage.setItem("__env_tested__", Date());
         //写入localStorage，去除版本说明提示
         function myBrowser(){
             var userAgent = navigator.userAgent;
@@ -107,8 +109,6 @@
         }
         unsafeWindow.localStorage.setItem("__version_tested__v21553593265"+ myBrowser(),new Date().getTime());
         $('#version_newnotice').hide();
-        //写入session，用来跳过环境检测
-        unsafeWindow.sessionStorage.setItem("__env_tested__", Date());
         //删除环境监测菜单栏
         let intervalKey = setInterval(() => {
             if (document.getElementById("env") != -1)
@@ -135,6 +135,46 @@
                     ;
                 }
             }
+        }, 0.5 * 1e3);
+        let count_1 = 60;
+        let intervalKey_1 = setInterval(() => {
+            //去除不可操作灰页面
+            if (document.getElementById("layui-layer-shade1") != null) {
+                try
+                {
+                    document.getElementById("layui-layer-shade1").parentNode.removeChild(document.getElementById("layui-layer-shade1"));
+                    console.log('去除不可操作灰页面元素成功');
+                }
+                catch (error)
+                {
+                    console.log('去除不可操作页面元素失败');
+                }
+            }
+            else
+            {
+                console.log('无不可操作灰页面，无需去除');
+            }
+            //去除开始测试框
+            if (document.getElementById("layui-layer1") != null) {
+                try
+                {
+                    document.getElementById("layui-layer1").parentNode.removeChild(document.getElementById("layui-layer1"));
+                    console.log('去除测试框元素成功');
+                }
+                catch (error)
+                {
+                    console.log('去除测试框元素失败');
+                }
+            }
+            else
+            {
+                console.log('无测试框，无需去除');
+            }
+            console.log('去除结束');
+            if (--count_1 === 0)
+            {
+                clearInterval(intervalKey_1);
+            };
         }, 0.5 * 1e3);
         //去除长时间未操作窗口，这里也有这个弹窗
         setInterval (
