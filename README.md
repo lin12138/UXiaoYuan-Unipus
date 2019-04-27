@@ -4,7 +4,8 @@
 [GitHub](https://github.com/Brush-JIM/UXiaoYuan-Unipus)、[Bitbucket](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/)、[Greasy Fork](https://greasyfork.org/zh-CN/scripts/381805-u校园脚本)  
 
 去除环境检测的灵感来源于GreasyFork上面的[U校园环境检测屏蔽](https://greasyfork.org/zh-CN/scripts/380349-u校园环境检测屏蔽)  
-但是我试了没效果，不知道是不是我的打开方式不对…… 于是写了个简单粗暴的方法，不是改style样式，而是直接删除  
+但是我试了没效果，不知道是不是我的打开方式不对……  
+~~于是写了个简单粗暴的方法，不是改style样式，而是直接删除~~（已改变关闭方法，不再是删除元素）  
   
 ## 食用方法
 * 安装脚本管理器，方法请看[Greasy Fork](https://greasyfork.org/zh-CN)
