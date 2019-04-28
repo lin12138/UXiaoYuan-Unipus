@@ -1,5 +1,5 @@
 # U校园脚本  
-  
+## 敬请期待下一版本V1.4，将会使得使用更加便捷 ——19.4.28
 项目地址  
 [GitHub](https://github.com/Brush-JIM/UXiaoYuan-Unipus)、[Bitbucket](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/)、[Greasy Fork](https://greasyfork.org/zh-CN/scripts/381805-u校园脚本)  
 
