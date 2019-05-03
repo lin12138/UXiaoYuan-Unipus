@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
-// @version      2019.05.04
+// @version      2.0
 // @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
@@ -31,14 +31,13 @@
     else
     {
         var url = unsafeWindow.location.href;
-        if (unsafeWindow.location.href == "https://sso.unipus.cn/sso/userinfo.html")
+        if (unsafeWindow.location.href == "https://sso.unipus.cn/sso/login?service=")
         {
             unsafeWindow.localStorage.removeItem('username');
             unsafeWindow.localStorage.removeItem('password');
-            alert("重置成功");
-            unsafeWindow.location.href = "https://sso.unipus.cn/sso/logout";
+            unsafeWindow.location.href = "https://sso.unipus.cn/sso/login";
         }
-        else if (url.indexOf("https://sso.unipus.cn/sso/login") != -1)
+        else if (url.search("//sso.unipus.cn/sso/login") != -1)
         {
             var uswename = unsafeWindow.localStorage.getItem('username');
             var password = unsafeWindow.localStorage.getItem('password');
@@ -48,7 +47,7 @@
                 (
                     function ()
                     {
-                        $("button[class='btn btn-login btn-fill']")[0].innerText = '自动登录\n（鼠标点击，不要回车）';
+                        $("button[class='btn btn-login btn-fill']")[0].innerText = '自动登录';
                         $("button[class='btn btn-login btn-fill']").bind
                         (
                             'click',
@@ -76,7 +75,7 @@
                 )
             }
         }
-        else if (url.indexOf('https://u.unipus.cn/user/student') != -1)
+        else if (url.search('//u.unipus.cn/user/student') != -1)
         {
             function myBrowser(){
                 var userAgent = unsafeWindow.navigator.userAgent;
@@ -108,7 +107,7 @@
             (
                 function ()
                 {
-                    //Greasemonkey脚本管理器Hook函数时会有问题
+                    //Greasemonkey脚本管理器Hook window.open函数时会有问题
                     //Hook window.open函数，禁止多余跳转
                     unsafeWindow.open_ = unsafeWindow.open;
                     unsafeWindow.open = function(url)
@@ -154,29 +153,23 @@
                         }
                         , 60000
                     );
-                    var _iIntervalID = setInterval(function() {
-                        if ($("[class='menu-li']").length > 2)
-                        {
-                            clearInterval(_iIntervalID);
-                            //增加重置登录信息元素
-                            $("[class='hiden-menu']").append("<div class=\"menu-li\" id=\"relogin\">重置登录信息</a>");
-                            $("div[id='relogin']").bind
-                            (
-                                'click',
-                                function()
-                                {
-                                    unsafeWindow.location.href = "https://sso.unipus.cn/sso/userinfo.html";
-                                }
-                            )
-                            //更改元素
-                            $('[class="menu-li"]')[2].innerText = '重新登录';
-                        }
-                    },20);
                 }
             )
         }
-        else if (unsafeWindow.location.href.indexOf('https://ucontent.unipus.cn/_pc_default/pc.html') != -1)
+        else if (unsafeWindow.location.href == "https://u.unipus.cn/index.html/?logout=true")
         {
+            //Hook windiw.login函数
+            $(document).ready
+            (
+                unsafeWindow.login = function ()
+                {
+                    unsafeWindow.location.href = "https://sso.unipus.cn/sso/login?service=";
+                }
+            )
+        }
+        else if (unsafeWindow.location.href.search('//ucontent.unipus.cn/_pc_default/pc.html') != -1)
+        {
+
             $(document).ready
             (
                 function ()
@@ -209,16 +202,6 @@
                         }
                         , 100
                     )
-                }
-            )
-        }
-        else if (unsafeWindow.location.href.indexOf('https://u.unipus.cn/index.html') != -1)
-        {
-            $(document).ready
-            (
-                function ()
-                {
-                    unsafeWindow.login();
                 }
             )
         }
