@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
-// @version      2019.05.04.1
+// @version      2019.05.04
 // @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
@@ -12,8 +12,6 @@
 // @match        http://u.unipus.cn/user/student*
 // @match        http://u.unipus.cn/index.html/?logout=true
 // @match        http://ucontent.unipus.cn/_pc_default/pc.html*
-// @match        https://u.unipus.cn/index.html*
-// @match        http://u.unipus.cn/index.html*
 // @grant        unsafeWindow
 // @run-at       document-start
 // @require      https://code.jquery.com/jquery-3.3.1.min.js
@@ -220,14 +218,7 @@
             (
                 function ()
                 {
-                    try
-                    {
-                        unsafeWindow.login();
-                    }
-                    catch (error)
-                    {
-                        unsafeWindow.location.href = 'https://sso.unipus.cn/sso/login';
-                    }
+                    unsafeWindow.login();
                 }
             )
         }
