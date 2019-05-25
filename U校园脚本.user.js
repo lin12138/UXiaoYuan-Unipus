@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
-// @version      2019.05.04.1
+// @version      2019.05.25
 // @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
@@ -110,20 +110,6 @@
             (
                 function ()
                 {
-                    //Greasemonkey脚本管理器Hook函数时会有问题
-                    //Hook window.open函数，禁止多余跳转
-                    unsafeWindow.open_ = unsafeWindow.open;
-                    unsafeWindow.open = function(url)
-                    {
-                        if (url == 'https://ucontent.unipus.cn/upcstatic/user_env/user_env.html' || url == 'https://u.unipus.cn/help/version.html')
-                        {
-                            console.log('取消跳转');
-                        }
-                        else
-                        {
-                            unsafeWindow.open_(url);
-                        }
-                    }
                     //Hook window.GotoEnv函数，禁止弹窗
                     unsafeWindow.GotoEnv = function()
                     {
