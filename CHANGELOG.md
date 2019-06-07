@@ -1,5 +1,10 @@
 # 日志  
 
+## 19.06.07
+* 端午节快乐呀
+* 高考快乐 too
+* 增加了一娱乐功能，访问[https://u.unipus.cn/user/student](https://u.unipus.cn/user/student)会修改动态头像
+
 ## 19.5.25 V2019.05.25
 * 取消Hook window.open函数，因为Greasemonkey可能会出现问题，导致无法正常跳转。
 
