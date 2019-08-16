@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         U校园脚本
 // @namespace    https://github.com/Brush-JIM/UXiaoYuan-Unipus
-// @version      2019.08.16
-// @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口
+// @version      2019.06.07
+// @description  自动登录，关闭环境检测、长时间无操作、未开麦克风等窗口，以及娱乐一下，动态改头像
 // @author       Brush-JIM
 // @match        https://sso.unipus.cn/sso*
 // @match        https://u.unipus.cn/user/student*
@@ -140,7 +140,7 @@
                         function () {
                             unsafeWindow.timeline.revived();
                         }
-                        , 6000
+                        , 60000
                     );
                     var _iIntervalID = setInterval(function() {
                         if ($("[class='menu-li']").length > 2)
@@ -162,6 +162,27 @@
                     },20);
                 }
             )
+            $(function(){
+                let url = [
+                    'https://pic2.zhimg.com/50/v2-51e0286a8d64e4fdcc9ea436a709002b_hd.gif',
+                    'https://pic2.zhimg.com/80/ce07d24f1962089d382a7803cd432436_hd.jpg',
+                    'https://pic1.zhimg.com/80/ee5766015666f847cf32b6e7aa846ef4_hd.jpg',
+                    'https://pic1.zhimg.com/80/8c21f3a7c7e4d00dc48ff7bc5436b07d_hd.jpg',
+                    'https://pic4.zhimg.com/80/d9e6b59707753b13e0cde2637e47a7df_hd.jpg',
+                    'https://pic3.zhimg.com/80/0ecdc3b11dfdd57c38fc329f06efa581_hd.jpg',
+                    'https://pic4.zhimg.com/50/v2-455606232ce3f82522e0d37b2fcf87b3_hd.gif',
+                    'https://pic1.zhimg.com/80/d018712de239e2bc44529ef0b09ceabb_hd.jpg',
+                    'https://pic3.zhimg.com/80/bb91e2340c243980d83cffd59b4e8c88_hd.jpg',
+                    'https://pic4.zhimg.com/80/2a3ce36bcb0a26e817aa4acacd7ece12_hd.jpg',
+                    'https://pic1.zhimg.com/80/d1a39d4f13597348a866a85aa1bc198b_hd.jpg',
+                    'https://pic4.zhimg.com/50/v2-4957841552dfb44a12b91d476a36cd2e_hd.gif',
+                ]
+                function randomNum(n){
+                    return Math.floor(Math.random()*n+1)-1;
+                }
+                $('img[class="content_left_top_info_head_img"]')[0].src = url[randomNum(12)];
+                $('div[class="content_left_top_info_welcome"] span')[0].innerText = '头像只是拿来娱乐的😀';
+            })
         }
         else if (unsafeWindow.location.href.indexOf('https://ucontent.unipus.cn/_pc_default/pc.html') != -1)
         {
