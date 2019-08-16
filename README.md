@@ -16,5 +16,7 @@
 CHANGELOG.md [GitHub](https://github.com/Brush-JIM/UXiaoYuan-Unipus/blob/master/CHANGELOG.md) or [Bitbucket](https://bitbucket.org/Brush-JIM/uxiaoyuan-unipus/src/master/CHANGELOG.md?fileviewer=file-view-default)  
 
 ---
+# 声明
 代码开源、免费  
 不接受任何捐赠  
+任何人禁止商用，本人不负与之产生的任何责任  
